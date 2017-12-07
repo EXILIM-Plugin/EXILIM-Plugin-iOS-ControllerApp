@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <!-- ブラウザ動作用-->
+  <link rel='stylesheet' href='css/onsenui.css' />
+  <link rel='stylesheet' href='css/onsen-css-components.css' />
+  <script src='js/lib/angular.min.js'></script>
+  <script src='js/lib/onsenui.min.js'></script>
+  <script src="js/lib/jquery.min.js"></script>
+
+  <script src="bundle.js"></script>
+  <script>
+    ons.bootstrap();
+    ons.ready(function(){
+        main.ready();
+        main.exilimPlugin.setUpCamera('localhost', function (errorMessage, json) {
+            if( errorMessage ) {
+                alert('setUpCamera error: ' + errorMessage);
+                return;
+            }
+            _this.writeLogMessage('setUpCamera: message = ' + JSON.stringify(json));
+       });
+    });
+  </script>
+</head>
+
+
+<body>
+
+  <ons-navigator page="home.html" id="main-navi"></ons-navigator>
+
+  <ons-template id="home.html">
+    <ons-page id="home-page">
+      <ons-toolbar>
+        <div class="center">Exilim Controller</div>
+      </ons-toolbar>
+
+      <div class="debug-btns">
+        <ons-button id="start-liveview-btn" class="debug-btn" modifier="material">startLive</ons-button>
+        <ons-button id="stop-liveview-btn" class="debug-btn" modifier="material">stopLive</ons-button>
+        <ons-button id="take-photo-btn" class="debug-btn" modifier="material">takePhoto</ons-button><br/>
+        <ons-button id="start-record-btn" class="debug-btn" modifier="material">startRecord</ons-button>
+        <ons-button id="stop-record-btn" class="debug-btn" modifier="material">stopRecord</ons-button><br/>
+      </div>
+      <div class="zoom-btns">
+        <div style="text-align: center; margin: 2px;">Out ← Zoom → In</div>
+        <ons-button id="zoom-out-max-btn" class="debug-btn" modifier="quiet" style="margin: 2px;">⏪</ons-button>
+        <ons-button id="zoom-out-oneshot-btn" class="debug-btn" modifier="quiet" style="margin: 2px;">⬅️</ons-button>
+        <ons-button id="zoom-out-start-btn" class="debug-btn" modifier="quiet" style="margin: 2px;">◀️</ons-button>
+        <ons-button id="zoom-stop-btn" class="debug-btn" modifier="quiet" style="margin: 2px;">⏹</ons-button>
+        <ons-button id="zoom-in-start-btn" class="debug-btn" modifier="quiet" style="margin: 2px;">▶️</ons-button>
+        <ons-button id="zoom-in-oneshot-btn" class="debug-btn" modifier="quiet" style="margin: 2px;">➡️</ons-button>
+        <ons-button id="zoom-in-max-btn" class="debug-btn" modifier="quiet" style="margin: 2px;">⏩</ons-button>
+      </div>
+
+      <div id="video-box" class="video-box flexbox-container">
+        <img id="preview" class="video-view">
+        <img class="preview-btn" src="images/play_start_btn.png">
+      </div>
+      <div class="log-view">
+        <p id="log-text" class="log-text"></p>
+      </div>
+    </ons-page>
+  </ons-template>
+
+</body>
+
+</html>

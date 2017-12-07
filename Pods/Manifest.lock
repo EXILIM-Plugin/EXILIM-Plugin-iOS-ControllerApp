@@ -1,0 +1,55 @@
+PODS:
+  - CocoaAsyncSocket (7.6.1)
+  - CocoaHTTPServer (2.3.1):
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+  - CocoaLumberjack (3.3.0):
+    - CocoaLumberjack/Default (= 3.3.0)
+    - CocoaLumberjack/Extensions (= 3.3.0)
+  - CocoaLumberjack/Default (3.3.0)
+  - CocoaLumberjack/Extensions (3.3.0):
+    - CocoaLumberjack/Default
+  - DeviceConnectExilimPlugin (0.1.0):
+    - CocoaAsyncSocket (= 7.6.1)
+    - DeviceConnectSDK (= 2.1.3)
+    - ReachabilitySwift (= 4.1.0)
+    - RxAutomaton (= 0.2.1)
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
+  - DeviceConnectHostPlugin (2.1.0):
+    - DeviceConnectSDK
+  - DeviceConnectSDK (2.1.3):
+    - CocoaAsyncSocket (~> 7.6.1)
+    - CocoaHTTPServer (~> 2.3.1)
+    - CocoaLumberjack (~> 3.3.0)
+    - RoutingHTTPServer (~> 1.0.0)
+  - ReachabilitySwift (4.1.0)
+  - RoutingHTTPServer (1.0.0):
+    - CocoaHTTPServer (~> 2.3)
+  - RxAutomaton (0.2.1):
+    - RxSwift (~> 3.0)
+  - RxCocoa (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxSwift (3.6.1)
+
+DEPENDENCIES:
+  - DeviceConnectExilimPlugin
+  - DeviceConnectHostPlugin
+  - DeviceConnectSDK (= 2.1.3)
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 7eadd3f59e1a6c84e2aefc93e9ff7b55156fe174
+  CocoaHTTPServer: 01f0b634f430f9fb3499446e4122b42305124861
+  CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
+  DeviceConnectExilimPlugin: 04fbfb16b503aa6027cbc8ad9231ef74af77672d
+  DeviceConnectHostPlugin: 97e868c617097bb1955b207d051de40964255e45
+  DeviceConnectSDK: b186cb0b9dd3e48ea0def545fcb4819345d52046
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  RoutingHTTPServer: fab8b13e725f26720500c146d43c98c11ebc4d47
+  RxAutomaton: 7ecff5486e47d9fbbb8cc1ceaea8c58732dabc50
+  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+
+PODFILE CHECKSUM: 34698d2ef0253c988fde1062dda7b56e63f4779f
+
+COCOAPODS: 1.3.1

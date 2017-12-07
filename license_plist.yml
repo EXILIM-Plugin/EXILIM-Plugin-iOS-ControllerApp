@@ -1,0 +1,35 @@
+# You can validate the YAML config file at http://yaml-online-parser.appspot.com
+
+# Specify GitHub's library manually.
+github:
+  - owner: ionic-team
+    name: ionicons
+    version: 1.2.0
+  - owner: OnsenUI
+    name: OnsenUI
+    version: 1.3.1
+  - owner: angular
+    name: angular.js
+    version: 1.6.3
+
+# Specify libraries manually
+manual:
+  - source: http://fontawesome.io/
+    name: Font Awesome (Font)
+    version: 4.1.0
+    body: |
+      * License: SIL OFL 1.1
+      * URL: http://scripts.sil.org/OFL
+
+  - source: http://fontawesome.io/
+    name: Font Awesome (CSS)
+    version: 4.1.0
+    body: |
+      * License: MIT License
+      * URL: http://opensource.org/licenses/mit-license.html
+
+# Specify libraries' names to be renamed.
+rename:
+  ionicons: Ionicons
+  OnsenUI: Onsen UI
+  angular.js: AngularJS

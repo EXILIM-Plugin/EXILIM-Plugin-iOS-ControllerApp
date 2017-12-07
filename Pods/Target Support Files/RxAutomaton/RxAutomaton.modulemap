@@ -1,0 +1,6 @@
+framework module RxAutomaton {
+  umbrella header "RxAutomaton-umbrella.h"
+
+  export *
+  module * { export * }
+}

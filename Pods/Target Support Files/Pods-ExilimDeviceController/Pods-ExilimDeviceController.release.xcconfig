@@ -1,0 +1,12 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket" "$PODS_CONFIGURATION_BUILD_DIR/CocoaHTTPServer" "$PODS_CONFIGURATION_BUILD_DIR/CocoaLumberjack" "$PODS_CONFIGURATION_BUILD_DIR/DeviceConnectHostPlugin" "$PODS_CONFIGURATION_BUILD_DIR/DeviceConnectSDK" "$PODS_CONFIGURATION_BUILD_DIR/ReachabilitySwift" "$PODS_CONFIGURATION_BUILD_DIR/RoutingHTTPServer" "$PODS_CONFIGURATION_BUILD_DIR/RxAutomaton" "$PODS_CONFIGURATION_BUILD_DIR/RxCocoa" "$PODS_CONFIGURATION_BUILD_DIR/RxSwift" "${PODS_ROOT}/DeviceConnectExilimPlugin"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2" $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DeviceConnectExilimPlugin"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/CocoaHTTPServer/CocoaHTTPServer.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/CocoaLumberjack/CocoaLumberjack.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/DeviceConnectHostPlugin/DeviceConnectHostPlugin.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/DeviceConnectSDK/DConnectSDK.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/ReachabilitySwift/Reachability.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/RoutingHTTPServer/RoutingHTTPServer.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/RxAutomaton/RxAutomaton.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/RxCocoa/RxCocoa.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/RxSwift/RxSwift.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/DeviceConnectExilimPlugin"
+OTHER_LDFLAGS = $(inherited) -framework "CocoaAsyncSocket" -framework "CocoaHTTPServer" -framework "CocoaLumberjack" -framework "DConnectSDK" -framework "DeviceConnectExilimPlugin" -framework "DeviceConnectHostPlugin" -framework "Reachability" -framework "RoutingHTTPServer" -framework "RxAutomaton" -framework "RxCocoa" -framework "RxSwift"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

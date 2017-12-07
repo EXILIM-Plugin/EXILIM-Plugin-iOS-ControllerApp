@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43D10CB66EB0A572813B14A1 /* Pods_ExilimDeviceController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9035428F338CE6220B851054 /* Pods_ExilimDeviceController.framework */; };
+		7A3682551FBAC6DD00BA0823 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A3682541FBAC6DD00BA0823 /* Settings.bundle */; };
+		7A3682571FBACA4F00BA0823 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3682561FBACA4F00BA0823 /* AboutTableViewController.swift */; };
+		7A82E1D41F84CEAC0036A715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82E1D31F84CEAC0036A715 /* AppDelegate.swift */; };
+		7A82E1D61F84CEAC0036A715 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82E1D51F84CEAC0036A715 /* WebViewController.swift */; };
+		7A82E1D81F84CEAC0036A715 /* SiteListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82E1D71F84CEAC0036A715 /* SiteListTableViewController.swift */; };
+		7A82E1DB1F84CEAC0036A715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A82E1D91F84CEAC0036A715 /* Main.storyboard */; };
+		7A82E1DD1F84CEAC0036A715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A82E1DC1F84CEAC0036A715 /* Assets.xcassets */; };
+		7A82E1E01F84CEAC0036A715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A82E1DE1F84CEAC0036A715 /* LaunchScreen.storyboard */; };
+		7A89C8A61F84DA7300E42681 /* WebApps in Resources */ = {isa = PBXBuildFile; fileRef = 7A89C8A51F84DA6C00E42681 /* WebApps */; };
+		7AAFDFAD1FA849D30092B34E /* Application.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AAFDFAB1FA849D30092B34E /* Application.xcdatamodeld */; };
+		7AAFDFB31FA97C1E0092B34E /* HelpListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAFDFB21FA97C1E0092B34E /* HelpListTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B1AE29D5605196E0DF5B416 /* Pods-ExilimDeviceController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExilimDeviceController.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExilimDeviceController/Pods-ExilimDeviceController.release.xcconfig"; sourceTree = "<group>"; };
+		1A828321E6FAB33FFDDD633E /* Pods-ExilimDeviceController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExilimDeviceController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExilimDeviceController/Pods-ExilimDeviceController.debug.xcconfig"; sourceTree = "<group>"; };
+		790F81161DECE2A1CD647622 /* Pods-DCExilimSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCExilimSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DCExilimSample/Pods-DCExilimSample.debug.xcconfig"; sourceTree = "<group>"; };
+		7A3682541FBAC6DD00BA0823 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		7A3682561FBACA4F00BA0823 /* AboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		7A82E1D01F84CEAC0036A715 /* ExilimDeviceController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExilimDeviceController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A82E1D31F84CEAC0036A715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A82E1D51F84CEAC0036A715 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		7A82E1D71F84CEAC0036A715 /* SiteListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteListTableViewController.swift; sourceTree = "<group>"; };
+		7A82E1DA1F84CEAC0036A715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A82E1DC1F84CEAC0036A715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A82E1DF1F84CEAC0036A715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A89C8A51F84DA6C00E42681 /* WebApps */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WebApps; sourceTree = "<group>"; };
+		7AAFDFAC1FA849D30092B34E /* Application.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Application.xcdatamodel; sourceTree = "<group>"; };
+		7AAFDFB21FA97C1E0092B34E /* HelpListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpListTableViewController.swift; sourceTree = "<group>"; };
+		9035428F338CE6220B851054 /* Pods_ExilimDeviceController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExilimDeviceController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9393E6C8D02562C65ED64E1C /* Pods-DCExilimSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCExilimSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-DCExilimSample/Pods-DCExilimSample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A82E1CD1F84CEAC0036A715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D10CB66EB0A572813B14A1 /* Pods_ExilimDeviceController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52BFD880C4DB261B4F0399DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				790F81161DECE2A1CD647622 /* Pods-DCExilimSample.debug.xcconfig */,
+				9393E6C8D02562C65ED64E1C /* Pods-DCExilimSample.release.xcconfig */,
+				1A828321E6FAB33FFDDD633E /* Pods-ExilimDeviceController.debug.xcconfig */,
+				0B1AE29D5605196E0DF5B416 /* Pods-ExilimDeviceController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		778155B38F4C2B4631EBE482 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9035428F338CE6220B851054 /* Pods_ExilimDeviceController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A82E1C71F84CEAC0036A715 = {
+			isa = PBXGroup;
+			children = (
+				7A82E1D21F84CEAC0036A715 /* ExilimDeviceController */,
+				7A82E1D11F84CEAC0036A715 /* Products */,
+				52BFD880C4DB261B4F0399DC /* Pods */,
+				778155B38F4C2B4631EBE482 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A82E1D11F84CEAC0036A715 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A82E1D01F84CEAC0036A715 /* ExilimDeviceController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A82E1D21F84CEAC0036A715 /* ExilimDeviceController */ = {
+			isa = PBXGroup;
+			children = (
+				7A82E1D31F84CEAC0036A715 /* AppDelegate.swift */,
+				7A82E1D71F84CEAC0036A715 /* SiteListTableViewController.swift */,
+				7A82E1D51F84CEAC0036A715 /* WebViewController.swift */,
+				7AAFDFB21FA97C1E0092B34E /* HelpListTableViewController.swift */,
+				7A3682561FBACA4F00BA0823 /* AboutTableViewController.swift */,
+				7A82E1D91F84CEAC0036A715 /* Main.storyboard */,
+				7A82E1DC1F84CEAC0036A715 /* Assets.xcassets */,
+				7A82E1DE1F84CEAC0036A715 /* LaunchScreen.storyboard */,
+				7A3682541FBAC6DD00BA0823 /* Settings.bundle */,
+				7A89C8A51F84DA6C00E42681 /* WebApps */,
+				7AAFDFAB1FA849D30092B34E /* Application.xcdatamodeld */,
+			);
+			path = ExilimDeviceController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A82E1CF1F84CEAC0036A715 /* ExilimDeviceController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A82E1E41F84CEAC0036A715 /* Build configuration list for PBXNativeTarget "ExilimDeviceController" */;
+			buildPhases = (
+				38D13DA30549BE302FC5CE31 /* [CP] Check Pods Manifest.lock */,
+				7A82E1CC1F84CEAC0036A715 /* Sources */,
+				7A82E1CD1F84CEAC0036A715 /* Frameworks */,
+				7A82E1CE1F84CEAC0036A715 /* Resources */,
+				D02664C1B3C80FD94299CB7D /* [CP] Embed Pods Frameworks */,
+				E5700A5F0922587C98557FAE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExilimDeviceController;
+			productName = DCExilimSample;
+			productReference = 7A82E1D01F84CEAC0036A715 /* ExilimDeviceController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A82E1C81F84CEAC0036A715 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "CASIO COMPUTER Co., LTD.";
+				TargetAttributes = {
+					7A82E1CF1F84CEAC0036A715 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = P92VT9GMKS;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7A82E1CB1F84CEAC0036A715 /* Build configuration list for PBXProject "ExilimDeviceController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A82E1C71F84CEAC0036A715;
+			productRefGroup = 7A82E1D11F84CEAC0036A715 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A82E1CF1F84CEAC0036A715 /* ExilimDeviceController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A82E1CE1F84CEAC0036A715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A82E1E01F84CEAC0036A715 /* LaunchScreen.storyboard in Resources */,
+				7A89C8A61F84DA7300E42681 /* WebApps in Resources */,
+				7A3682551FBAC6DD00BA0823 /* Settings.bundle in Resources */,
+				7A82E1DD1F84CEAC0036A715 /* Assets.xcassets in Resources */,
+				7A82E1DB1F84CEAC0036A715 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38D13DA30549BE302FC5CE31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExilimDeviceController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D02664C1B3C80FD94299CB7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ExilimDeviceController/Pods-ExilimDeviceController-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaHTTPServer/CocoaHTTPServer.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${PODS_ROOT}/DeviceConnectExilimPlugin/DeviceConnectExilimPlugin.framework",
+				"${BUILT_PRODUCTS_DIR}/DeviceConnectHostPlugin/DeviceConnectHostPlugin.framework",
+				"${BUILT_PRODUCTS_DIR}/DeviceConnectSDK/DConnectSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/RoutingHTTPServer/RoutingHTTPServer.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAutomaton/RxAutomaton.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaHTTPServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceConnectExilimPlugin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceConnectHostPlugin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DConnectSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RoutingHTTPServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAutomaton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExilimDeviceController/Pods-ExilimDeviceController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5700A5F0922587C98557FAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExilimDeviceController/Pods-ExilimDeviceController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A82E1CC1F84CEAC0036A715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AAFDFAD1FA849D30092B34E /* Application.xcdatamodeld in Sources */,
+				7A82E1D81F84CEAC0036A715 /* SiteListTableViewController.swift in Sources */,
+				7A82E1D41F84CEAC0036A715 /* AppDelegate.swift in Sources */,
+				7A82E1D61F84CEAC0036A715 /* WebViewController.swift in Sources */,
+				7AAFDFB31FA97C1E0092B34E /* HelpListTableViewController.swift in Sources */,
+				7A3682571FBACA4F00BA0823 /* AboutTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7A82E1D91F84CEAC0036A715 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A82E1DA1F84CEAC0036A715 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A82E1DE1F84CEAC0036A715 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A82E1DF1F84CEAC0036A715 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A82E1E21F84CEAC0036A715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A82E1E31F84CEAC0036A715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A82E1E51F84CEAC0036A715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A828321E6FAB33FFDDD633E /* Pods-ExilimDeviceController.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = P92VT9GMKS;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				INFOPLIST_FILE = ExilimDeviceController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.casio.EXILIM-DWA-Plugin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7A82E1E61F84CEAC0036A715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B1AE29D5605196E0DF5B416 /* Pods-ExilimDeviceController.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = P92VT9GMKS;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				INFOPLIST_FILE = ExilimDeviceController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.casio.EXILIM-DWA-Plugin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A82E1CB1F84CEAC0036A715 /* Build configuration list for PBXProject "ExilimDeviceController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A82E1E21F84CEAC0036A715 /* Debug */,
+				7A82E1E31F84CEAC0036A715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A82E1E41F84CEAC0036A715 /* Build configuration list for PBXNativeTarget "ExilimDeviceController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A82E1E51F84CEAC0036A715 /* Debug */,
+				7A82E1E61F84CEAC0036A715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7AAFDFAB1FA849D30092B34E /* Application.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7AAFDFAC1FA849D30092B34E /* Application.xcdatamodel */,
+			);
+			currentVersion = 7AAFDFAC1FA849D30092B34E /* Application.xcdatamodel */;
+			path = Application.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7A82E1C81F84CEAC0036A715 /* Project object */;
+}

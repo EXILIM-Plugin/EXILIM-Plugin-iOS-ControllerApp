@@ -1,0 +1,54 @@
+/**/
+.debug-btns {
+    margin-top: 5%;
+}
+
+.debug-btn {
+    margin: 5px 10px;
+}
+
+.video-box {
+    height: 240px;
+    width: 320px;
+    /*text-align: center;*/
+    background-color: black;
+    position: relative;
+    /*left: 0;*/
+    /*right: 0;*/
+    margin: 5% auto;
+}
+
+.video-view {
+    height: 240px;
+    width: 320px;
+    object-fit: contain;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.preview-btn {
+
+}
+
+.log-view {
+    width: 90%;
+    /*height: 100%;*/
+    margin: auto;
+    overflow-y: scroll;
+}
+
+.flexbox-container {
+    display: -webkit-box; /* Android4.3以前ブラウザ用 */
+    display: -webkit-flex; /* iOS8以前Safari用 */
+    display: flex;
+    -webkit-box-align: center; /* Android4.3以前ブラウザ用 縦方向中央揃え */
+    -webkit-align-items: center; /* iOS8以前Safari用 縦方向中央揃え */
+    align-items: center; /* 縦方向中央揃え */
+    -webkit-box-pack: center; /* Android4.3以前ブラウザ用 横方向中央揃え */
+    -webkit-justify-content: center; /* iOS8以前Safari用 横方向中央揃え */
+    justify-content: center; /* 横方向中央揃え */
+}
