@@ -8,9 +8,15 @@
 
 import UIKit
 import WebKit
+import Reachability
+import RxSwift
+import RxCocoa
+import SystemConfiguration.CaptiveNetwork
+import NetworkExtension
 
 class WebViewController: UIViewController {
 
+    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var progress: UIProgressView!
     @IBOutlet weak var addressBar: UIStackView!
@@ -19,10 +25,13 @@ class WebViewController: UIViewController {
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var reloadButton: UIButton!
     @IBOutlet weak var closeButton: UIButton!
-    
+    @IBOutlet weak var ssidLabel: UILabel!
+
     private var initialUrl: URL?
     
     private var webView: WKWebView!
+
+    private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +64,7 @@ class WebViewController: UIViewController {
         let topConstraint = NSLayoutConstraint(item: webView,
                                                attribute: NSLayoutAttribute.top,
                                                relatedBy: NSLayoutRelation.equal,
-                                               toItem: self.addressBar,
+                                               toItem: self.headerView,
                                                attribute: NSLayoutAttribute.bottom,
                                                multiplier: 1.0,
                                                constant: 0)
@@ -95,10 +104,41 @@ class WebViewController: UIViewController {
         gestureRecognizer.delegate = self
         self.webView.addGestureRecognizer(gestureRecognizer)
 
+        // SSIDの表示
+        ssidLabel.text = self.currentSSID
+        let ssidPolling = Observable<Int>.interval(1.0, scheduler: MainScheduler.instance)
+        let ssidObservable = ssidPolling.map { [weak self] _ -> String? in
+            guard let selfRef = self else {
+                return nil
+            }
+            return selfRef.currentSSID
+            }.distinctUntilChanged( { $0 == $1 } )
+        ssidObservable.bind(to: ssidLabel.rx.text).disposed(by: self.disposeBag)
+
         // ロード
         self.load(url: initialUrl)
     }
-    
+
+    var currentSSID: String? {
+        let interfaces = CNCopySupportedInterfaces()
+        let count = CFArrayGetCount(interfaces)
+        guard count > 0 else {
+            return nil
+        }
+        print("Count=\(count)")
+        let interfaceName: UnsafeRawPointer = CFArrayGetValueAtIndex(interfaces, 0)
+        let rec = unsafeBitCast(interfaceName, to: AnyObject.self)
+        if let unsafeInterfaceData = CNCopyCurrentNetworkInfo("\(rec)" as CFString) {
+            let interfaceData = unsafeInterfaceData as Dictionary
+            let ssid = interfaceData["SSID" as NSString] as! String
+            //                let bssid = interfaceData["BSSID" as NSString] as! String
+            //                Log.trace("SSID=\(ssid) BSSID=\(bssid)")
+            return ssid
+        } else {
+            return nil
+        }
+    }
+
     deinit {
         self.webView.removeObserver(self, forKeyPath: "title")
         self.webView.removeObserver(self, forKeyPath: "estimatedProgress")

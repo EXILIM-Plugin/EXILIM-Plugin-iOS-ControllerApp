@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -290,15 +290,40 @@
         <scene sceneID="UV4-VF-YEX">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="Zss-Yy-mQP" customClass="WebViewController" customModule="ExilimDeviceController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oQ8-v6-YBu">
+                    <view key="view" contentMode="scaleToFill" id="oQ8-v6-YBu" userLabel="ContainerView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRF-PX-6Rp">
-                                <rect key="frame" x="0.0" y="20" width="375" height="80"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRF-PX-6Rp" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upf-C6-YuI" userLabel="SatusView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="16"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SSID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9M-UT-pyI">
+                                                <rect key="frame" x="4" y="1.5" width="28.5" height="12"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yR-eO-7uh">
+                                                <rect key="frame" x="32.5" y="1.5" width="15" height="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Z9M-UT-pyI" firstAttribute="centerY" secondItem="upf-C6-YuI" secondAttribute="centerY" id="8ex-fF-oCT"/>
+                                            <constraint firstAttribute="height" constant="16" id="Ffe-8H-4UU"/>
+                                            <constraint firstItem="Z9M-UT-pyI" firstAttribute="leading" secondItem="upf-C6-YuI" secondAttribute="leading" constant="4" id="Vaf-Uk-jIT"/>
+                                            <constraint firstItem="6yR-eO-7uh" firstAttribute="leading" secondItem="Z9M-UT-pyI" secondAttribute="trailing" id="gXl-UL-3kw"/>
+                                            <constraint firstItem="6yR-eO-7uh" firstAttribute="centerY" secondItem="upf-C6-YuI" secondAttribute="centerY" id="ga7-wx-DEW"/>
+                                        </constraints>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7d6-yr-VgR" userLabel="TitleView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+                                        <rect key="frame" x="0.0" y="16" width="375" height="32"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVh-bi-MFf">
                                                 <rect key="frame" x="8" y="4" width="18" height="24"/>
@@ -329,7 +354,7 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Fsg-s3-50E">
-                                        <rect key="frame" x="6" y="32" width="363" height="48"/>
+                                        <rect key="frame" x="6" y="48" width="363" height="48"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7V-rj-TaT">
                                                 <rect key="frame" x="0.0" y="12" width="32" height="24"/>
@@ -377,21 +402,23 @@
                                         </constraints>
                                     </stackView>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1Sm-XX-LCW">
-                                        <rect key="frame" x="0.0" y="78" width="375" height="2"/>
+                                        <rect key="frame" x="0.0" y="94" width="375" height="2"/>
                                     </progressView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Fsg-s3-50E" secondAttribute="bottom" id="Ies-Av-f3c"/>
+                                    <constraint firstItem="7d6-yr-VgR" firstAttribute="top" secondItem="upf-C6-YuI" secondAttribute="bottom" id="1TV-uo-gNy"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fsg-s3-50E" secondAttribute="bottom" id="EKX-B5-CjH"/>
                                     <constraint firstItem="Fsg-s3-50E" firstAttribute="top" secondItem="7d6-yr-VgR" secondAttribute="bottom" id="Jys-WI-YEC"/>
                                     <constraint firstAttribute="trailing" secondItem="Fsg-s3-50E" secondAttribute="trailing" constant="6" id="M63-pj-RqH"/>
                                     <constraint firstItem="Fsg-s3-50E" firstAttribute="leading" secondItem="TRF-PX-6Rp" secondAttribute="leading" constant="6" id="Qlk-az-GPl"/>
+                                    <constraint firstAttribute="trailing" secondItem="upf-C6-YuI" secondAttribute="trailing" id="XWF-kk-7D5"/>
                                     <constraint firstItem="1Sm-XX-LCW" firstAttribute="leading" secondItem="TRF-PX-6Rp" secondAttribute="leading" id="dMq-bD-y6J"/>
+                                    <constraint firstItem="upf-C6-YuI" firstAttribute="top" secondItem="TRF-PX-6Rp" secondAttribute="top" id="dkx-ae-ubD"/>
+                                    <constraint firstItem="upf-C6-YuI" firstAttribute="leading" secondItem="TRF-PX-6Rp" secondAttribute="leading" id="gWd-uT-SN5"/>
                                     <constraint firstItem="1Sm-XX-LCW" firstAttribute="top" secondItem="Fsg-s3-50E" secondAttribute="bottom" constant="-2" id="iyu-rc-7UD"/>
                                     <constraint firstItem="7d6-yr-VgR" firstAttribute="leading" secondItem="TRF-PX-6Rp" secondAttribute="leading" id="ncU-R0-5k5"/>
                                     <constraint firstAttribute="trailing" secondItem="1Sm-XX-LCW" secondAttribute="trailing" id="upw-Gb-ZXl"/>
-                                    <constraint firstAttribute="bottom" secondItem="Fsg-s3-50E" secondAttribute="bottom" id="xXD-kQ-q4c"/>
-                                    <constraint firstItem="7d6-yr-VgR" firstAttribute="top" secondItem="TRF-PX-6Rp" secondAttribute="top" id="y6z-8X-FvM"/>
                                     <constraint firstAttribute="trailing" secondItem="7d6-yr-VgR" secondAttribute="trailing" id="z2A-ih-8qT"/>
                                 </constraints>
                             </view>
@@ -411,8 +438,10 @@
                         <outlet property="backButton" destination="O7V-rj-TaT" id="mwm-Wp-SM1"/>
                         <outlet property="closeButton" destination="dVh-bi-MFf" id="E3F-RE-28w"/>
                         <outlet property="forwardButton" destination="cnw-vh-Wr7" id="auu-6h-LRV"/>
+                        <outlet property="headerView" destination="TRF-PX-6Rp" id="hWZ-sN-3Cr"/>
                         <outlet property="progress" destination="1Sm-XX-LCW" id="nqs-UM-nyL"/>
                         <outlet property="reloadButton" destination="NWZ-9h-LTy" id="Dpi-9A-Tq0"/>
+                        <outlet property="ssidLabel" destination="6yR-eO-7uh" id="Ayh-KJ-51a"/>
                         <outlet property="titleLabel" destination="MEV-d4-QNY" id="RIR-hs-UfM"/>
                     </connections>
                 </viewController>
@@ -526,7 +555,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QNT-vg-W9I">
                                 <rect key="frame" x="8" y="64" width="359" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">ソフトウェア使用許諾契約
+                                <string key="text">ソフトウェア使用許諾契約
 
 本ソフトウェア使用許諾契約（以下「本契約」といいます。）は、カシオ計算機株式会社（以下｢弊社｣といいます。）の「EXILIM Device Controller」（以下「本ソフトウェア」といいます。）の使用許諾条件を定めることを目的としております。
 
@@ -558,7 +587,7 @@
 ３　第３条、第４条第１項、および本条は、本契約終了後においても有効に存続するものといたします。
 
 以上
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
