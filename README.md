@@ -90,7 +90,7 @@ DeviceConnectや EXILIMプラグインの詳細については、各プロジェ
 ## Releaseビルド時にラインタイムエラーが発生する
 
 本アプリが組み込んでいる EXILIMプラグインの Frameworkモジュールは Debug 設定でビルドされているため、アプリをビルドする際は Debug ビルドをするようにしてください。 
-本アプリを Release ビルドすると、CocoaPodsの他の Frameworkと EXILIMプラグインの Frameworkで生合成が取れず、ランタイムエラーが発生する問題があります。
+本アプリを Release ビルドすると、CocoaPodsの他の Frameworkと EXILIMプラグインの Frameworkで整合性が取れず、ランタイムエラーが発生する問題があります。
 
 アプリを Releaseビルドで利用する方法については後日対応する予定です。
 
