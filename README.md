@@ -15,8 +15,8 @@ DeviceConnectや EXILIMプラグインの詳細については、各プロジェ
 本アプリの詳細仕様は以下の通りです。
 
 - 対応カメラ
-  - EXILIM FR-100
-  - EXILIM FR-200
+  - EXILIM EX-FR100
+  - EXILIM EX-FR200
 - 対応 OS
   - iOS 9.0 以上
 - 動作確認済み Xcode バージョン
