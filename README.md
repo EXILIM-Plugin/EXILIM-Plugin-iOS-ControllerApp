@@ -2,6 +2,8 @@
 
 EXILIM-Plugin-iOS-ControllerAppは、iOS版 Device Connectプラットフォームである [DeviceConnect-iOS](https://github.com/DeviceConnect/DeviceConnect-iOS/) を使って、カシオ計算機製のデジタルカメラである EXILIM シリーズを利用できるようにしたブラウザアプリです。
 
+EXILIM Device Controllerアプリの使用方法は[**操作マニュアル**](http://support.casio.jp/storage/download_files/001/PDF/EXILIM_Plugin_iOS_Manual.pdf)をご覧ください。
+
 # アーキテクチャ
 
 本アプリは [DeviceConnect-iOS](https://github.com/DeviceConnect/DeviceConnect-iOS/) に EXILIM用のプラグインである [EXILIM-Plugin-iOS](https://github.com/EXILIM-Plugin/EXILIM-Plugin-iOS) を組み込み、Webブラウザから DeviceConnectの機能を使えるようにした iOSアプリとして作られています。
