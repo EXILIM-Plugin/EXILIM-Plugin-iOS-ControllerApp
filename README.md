@@ -14,7 +14,7 @@ DeviceConnectや EXILIMプラグインの詳細については、各プロジェ
 
 本アプリの詳細仕様は以下の通りです。
 
-- 対応カメラ
+- 動作確認カメラ
   - EXILIM EX-FR100
   - EXILIM EX-FR200
 - 対応 OS
