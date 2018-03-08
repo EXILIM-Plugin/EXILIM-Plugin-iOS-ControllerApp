@@ -9,13 +9,13 @@ PODS:
   - CocoaLumberjack/Default (3.3.0)
   - CocoaLumberjack/Extensions (3.3.0):
     - CocoaLumberjack/Default
-  - DeviceConnectExilimPlugin (0.2.0):
+  - DeviceConnectExilimPlugin (0.3.0):
     - CocoaAsyncSocket (= 7.6.1)
     - DeviceConnectSDK (= 2.1.3)
     - ReachabilitySwift (= 4.1.0)
-    - RxAutomaton (= 0.2.1)
-    - RxCocoa (~> 3.0)
-    - RxSwift (~> 3.0)
+    - RxAutomaton
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.1.2)
   - DeviceConnectHostPlugin (2.1.0):
     - DeviceConnectSDK
   - DeviceConnectSDK (2.1.3):
@@ -27,29 +27,40 @@ PODS:
   - RoutingHTTPServer (1.0.0):
     - CocoaHTTPServer (~> 2.3)
   - RxAutomaton (0.2.1):
-    - RxSwift (~> 3.0)
-  - RxCocoa (3.6.1):
-    - RxSwift (~> 3.6)
-  - RxSwift (3.6.1)
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
 
 DEPENDENCIES:
   - DeviceConnectExilimPlugin
   - DeviceConnectHostPlugin
   - DeviceConnectSDK (= 2.1.3)
+  - RxAutomaton (from `https://github.com/inamiy/RxAutomaton.git`, branch `swift/4.0`)
+
+EXTERNAL SOURCES:
+  RxAutomaton:
+    :branch: swift/4.0
+    :git: https://github.com/inamiy/RxAutomaton.git
+
+CHECKOUT OPTIONS:
+  RxAutomaton:
+    :commit: 44f499948b2ae1521af2a26708d7de965b070469
+    :git: https://github.com/inamiy/RxAutomaton.git
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: 7eadd3f59e1a6c84e2aefc93e9ff7b55156fe174
   CocoaHTTPServer: 01f0b634f430f9fb3499446e4122b42305124861
   CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
-  DeviceConnectExilimPlugin: 15d1bd0ed8684c05b4fe04ec9cd50e3608e581cd
+  DeviceConnectExilimPlugin: 7654ba72740f5fb3b4136c203e324cb8e7f4f8de
   DeviceConnectHostPlugin: 97e868c617097bb1955b207d051de40964255e45
   DeviceConnectSDK: b186cb0b9dd3e48ea0def545fcb4819345d52046
   ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
   RoutingHTTPServer: fab8b13e725f26720500c146d43c98c11ebc4d47
-  RxAutomaton: 7ecff5486e47d9fbbb8cc1ceaea8c58732dabc50
-  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
-  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  RxAutomaton: e421b1a11697dded41d636e4de5046e7933b1c6a
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
 
-PODFILE CHECKSUM: 34698d2ef0253c988fde1062dda7b56e63f4779f
+PODFILE CHECKSUM: b3a499c110cd307f40c527543b7e61601b0499d9
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0

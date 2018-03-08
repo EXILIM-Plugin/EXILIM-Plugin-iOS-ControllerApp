@@ -10,6 +10,8 @@ target 'ExilimDeviceController' do
   pod 'DeviceConnectSDK', '= 2.1.3'
   pod 'DeviceConnectHostPlugin'
   pod 'DeviceConnectExilimPlugin'
+
+  pod 'RxAutomaton', :git => 'https://github.com/inamiy/RxAutomaton.git', :branch => 'swift/4.0'
 end
 
 post_install do |installer|
