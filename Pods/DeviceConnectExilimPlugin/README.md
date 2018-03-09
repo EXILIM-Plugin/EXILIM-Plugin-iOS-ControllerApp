@@ -33,9 +33,8 @@ iOSで Device Connectおよびそのプラグインを利用するためには�
 - 動作確認済み Xcode バージョン
   - Xcode 9.2
 - 対応 Swift バージョン
-  - Swift 3.2
+  - Swift 4.0
   - ※ 本プラグインは Swiftで実装されているため、異なるバージョンの Swiftランタイムでは正常に動作しない可能性があります。
-  - ※ Swift 4 への対応も予定しています。
 - 依存ライブラリ
   - DeviceConnectSDK (2.1)
     - CocoaAsyncSocket (7.6.1)
@@ -43,9 +42,9 @@ iOSで Device Connectおよびそのプラグインを利用するためには�
     - CocoaLumberjack (3.3.0)
     - RoutingHTTPServer (1.0.0)
   - ReachabilitySwift (4.1.0)
-  - RxAutomaton (0.2.1)
-  - RxCocoa (3.6.1)
-  - RxSwift (3.6.1)
+  - RxAutomaton (0.2.1) swift/4.0 ブランチを使用すること
+  - RxCocoa (4.2.1)
+  - RxSwift (4.2.1)
 
 
 
@@ -59,13 +58,15 @@ source 'https://github.com/kunichiko/DeviceConnect-PodSpecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '9.0'
-swift_version = '3.0'
+swift_version = '4.0'
 use_frameworks!
 
 target 'ExilimDeviceController' do
   pod 'DeviceConnectSDK', '= 2.1.3'
   pod 'DeviceConnectHostPlugin'
   pod 'DeviceConnectExilimPlugin'
+
+  pod 'RxAutomaton', :git => 'https://github.com/inamiy/RxAutomaton.git', :branch => 'swift/4.0'
 end
 
 post_install do |installer|
@@ -104,26 +105,33 @@ source 'https://github.com/kunichiko/DeviceConnect-PodSpecs.git'
 
 こちらに登録されている DeviceConnectSDK 2.1.3 が対応済みのバージョンとなります。
 
+### RxAutomatonを swift/4.0ブランチに変更
+
+RxSwift 4に対応した RxAutomatonはまだ正式にリリースされていませんが、swift/4.0ブランチにて対応が行われていますので、そちらを参照する必要があります。
+
+Podfileに以下の記述を追加してください。
+
+```
+  pod 'RxAutomaton', :git => 'https://github.com/inamiy/RxAutomaton.git', :branch => 'swift/4.0'
+```
+
 ### 環境設定
 
-本プラグインは、「iOS 9以上」、「Swift 3」、「フレームワーク使用」を前提としているため、以下を記述しています。
+本プラグインは、「iOS 9以上」、「Swift 4」、「フレームワーク使用」を前提としているため、以下を記述しています。
 
 ```
 platform :ios, '9.0'
-swift_version = '3.0'
+swift_version = '4.0'
 use_frameworks!
 ```
+
+なお、Swift 3環境で利用したい場合は、DeviceConnectExilimPlugin 0.3.0をご利用ください。
 
 ### ワークアラウンド
 
 DeviceConnect SDKが依存している CocoaHTTPServerが[ビルドエラーになる問題](https://github.com/robbiehanson/CocoaHTTPServer/issues/171)があるため、各ビルドの `GCC_PREPROCESSOR_DEFINITIONS` 設定に `DD_LEGACY_MACROS=1` を追加しています。
 
 # 制限事項
-
-## Releaseビルド時にラインタイムエラーが発生する
-
-本プラグインの Frameworkモジュールは Debug 設定でビルドされています。そのため、RxSwiftなどの依存ライブラリも同じ Debug 設定でビルドされていないとランタイムエラーになる問題があります。
-アプリをビルドする際は Debug ビルドをするようにしてください。 Releaseビルド用の Frameworkは後日提供する予定です。
 
 ## 他プラグインとの共存について
 

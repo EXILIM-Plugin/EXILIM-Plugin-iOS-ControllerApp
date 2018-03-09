@@ -23,20 +23,19 @@ DeviceConnectや EXILIMプラグインの詳細については、各プロジェ
 - 動作確認済み Xcode バージョン
   - Xcode 9.2
 - 対応 Swift バージョン
-  - Swift 3.2
+  - Swift 4.0
   - ※ 本プラグインは Swiftで実装されているため、異なるバージョンの Swiftランタイムでは正常に動作しない可能性があります。
-  - ※ Swift 4 への対応も予定しています。
 - 依存ライブラリ
 　- DeviceConnect
-  - DeviceConnectSDK (2.1)
+  - DeviceConnectSDK (2.2.10)
     - CocoaAsyncSocket (7.6.1)
     - CocoaHTTPServer (2.3.1)
     - CocoaLumberjack (3.3.0)
     - RoutingHTTPServer (1.0.0)
   - ReachabilitySwift (4.1.0)
-  - RxAutomaton (0.2.1)
-  - RxCocoa (3.6.1)
-  - RxSwift (3.6.1)
+  - RxAutomaton (0.2.1) swift/4.0 ブランチを使用すること
+  - RxCocoa (4.2.1)
+  - RxSwift (4.2.1)
 
 # ビルド方法
 
@@ -50,7 +49,7 @@ DeviceConnectや EXILIMプラグインの詳細については、各プロジェ
 アプリを利用する際は、iOSデバイスとカメラを Wi-Fiで接続する必要があります。
 以下のその手順を示します。
 
-### FR-100でライブビュー映像を利用する場合
+### EX-FR100でライブビュー映像を利用する場合
 - アプリを起動します
 - 「登録済みのアプリ」から「EXILIM Controller」を選択します
 - カメラとコントローラーの電源を入れます
@@ -61,7 +60,7 @@ DeviceConnectや EXILIMプラグインの詳細については、各プロジェ
 - ホーム画面から本アプリのアイコンをタップします
 - 「startLive」ボタンを押すと、画面下部にライブビュー映像が表示されます
 
-### FR-100でSDカードのファイルにアクセスする場合
+### EX-FR100でSDカードのファイルにアクセスする場合
 - アプリを起動します
 - 「登録済みのアプリ」から「Device Connect Demo Site」を選択します
   - 外部サイトにある Webアプリのため、インターネットに接続した状態で開く必要があります
@@ -97,7 +96,7 @@ DeviceConnectや EXILIMプラグインの詳細については、各プロジェ
 
 ~~アプリを Releaseビルドで利用する方法については後日対応する予定です。~~
 
-EXILIMプラグインのバージョン0.3.0でこの問題に対応しました。
+EXILIMプラグインのバージョン0.3.0以降でこの問題に対応しました。
 
 # ライセンス
 

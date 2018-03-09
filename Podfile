@@ -3,11 +3,11 @@ source 'https://github.com/kunichiko/DeviceConnect-PodSpecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '9.0'
-swift_version = '3.0' 
+swift_version = '4.0' 
 use_frameworks!
 
 target 'ExilimDeviceController' do
-  pod 'DeviceConnectSDK', '= 2.1.3'
+  pod 'DeviceConnectSDK', '= 2.2.10'
   pod 'DeviceConnectHostPlugin'
   pod 'DeviceConnectExilimPlugin'
 

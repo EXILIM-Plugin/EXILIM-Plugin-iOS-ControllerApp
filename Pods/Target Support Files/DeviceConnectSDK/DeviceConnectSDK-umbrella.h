@@ -47,6 +47,7 @@
 #import "DConnectProximityProfile.h"
 #import "DConnectRequestMessage.h"
 #import "DConnectResponseMessage.h"
+#import "DConnectRFC3339DateUtils.h"
 #import "DConnectSDK.h"
 #import "DConnectService.h"
 #import "DConnectServiceDiscoveryProfile.h"

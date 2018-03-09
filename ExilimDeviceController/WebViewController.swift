@@ -147,7 +147,7 @@ class WebViewController: UIViewController {
         self.webView.removeObserver(self, forKeyPath: "canGoForward")
     }
     
-    func tapGestureRecognized(_ sender: UITapGestureRecognizer) {
+    @objc func tapGestureRecognized(_ sender: UITapGestureRecognizer) {
         // キーボードが出ている状態で、WebViewをタップしたらキーボードを閉じる
         if addressTextField.isFirstResponder {
             addressTextField.resignFirstResponder()

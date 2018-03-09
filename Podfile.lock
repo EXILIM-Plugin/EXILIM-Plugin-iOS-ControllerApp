@@ -9,16 +9,16 @@ PODS:
   - CocoaLumberjack/Default (3.3.0)
   - CocoaLumberjack/Extensions (3.3.0):
     - CocoaLumberjack/Default
-  - DeviceConnectExilimPlugin (0.3.0):
+  - DeviceConnectExilimPlugin (0.4.0):
     - CocoaAsyncSocket (= 7.6.1)
-    - DeviceConnectSDK (= 2.1.3)
+    - DeviceConnectSDK (= 2.2.10)
     - ReachabilitySwift (= 4.1.0)
     - RxAutomaton
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.1.2)
-  - DeviceConnectHostPlugin (2.1.0):
+  - DeviceConnectHostPlugin (2.2.10):
     - DeviceConnectSDK
-  - DeviceConnectSDK (2.1.3):
+  - DeviceConnectSDK (2.2.10):
     - CocoaAsyncSocket (~> 7.6.1)
     - CocoaHTTPServer (~> 2.3.1)
     - CocoaLumberjack (~> 3.3.0)
@@ -35,7 +35,7 @@ PODS:
 DEPENDENCIES:
   - DeviceConnectExilimPlugin
   - DeviceConnectHostPlugin
-  - DeviceConnectSDK (= 2.1.3)
+  - DeviceConnectSDK (= 2.2.10)
   - RxAutomaton (from `https://github.com/inamiy/RxAutomaton.git`, branch `swift/4.0`)
 
 EXTERNAL SOURCES:
@@ -52,15 +52,15 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 7eadd3f59e1a6c84e2aefc93e9ff7b55156fe174
   CocoaHTTPServer: 01f0b634f430f9fb3499446e4122b42305124861
   CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
-  DeviceConnectExilimPlugin: 7654ba72740f5fb3b4136c203e324cb8e7f4f8de
-  DeviceConnectHostPlugin: 97e868c617097bb1955b207d051de40964255e45
-  DeviceConnectSDK: b186cb0b9dd3e48ea0def545fcb4819345d52046
+  DeviceConnectExilimPlugin: 0481b9d6a01b2239aa28ab02ce00129c41818039
+  DeviceConnectHostPlugin: 7580d9d4aff34f815243d8cf704a7289c89772f2
+  DeviceConnectSDK: f7c9c6f9e5559d8bff6412d3ccc7085a4d371eee
   ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
   RoutingHTTPServer: fab8b13e725f26720500c146d43c98c11ebc4d47
   RxAutomaton: e421b1a11697dded41d636e4de5046e7933b1c6a
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxSwift: e49536837d9901277638493ea537394d4b55f570
 
-PODFILE CHECKSUM: b3a499c110cd307f40c527543b7e61601b0499d9
+PODFILE CHECKSUM: 3bebb1c531b6783788c4c170f0280cf9eec0b456
 
 COCOAPODS: 1.4.0

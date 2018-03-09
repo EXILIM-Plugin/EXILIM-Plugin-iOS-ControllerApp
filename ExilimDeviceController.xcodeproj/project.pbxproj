@@ -144,7 +144,7 @@
 					7A82E1CF1F84CEAC0036A715 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = P92VT9GMKS;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -405,7 +405,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.casio.EXILIM-DWA-Plugin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -426,7 +427,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.casio.EXILIM-DWA-Plugin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
