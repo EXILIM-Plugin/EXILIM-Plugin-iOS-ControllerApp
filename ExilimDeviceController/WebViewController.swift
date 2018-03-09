@@ -120,7 +120,9 @@ class WebViewController: UIViewController {
     }
 
     var currentSSID: String? {
-        let interfaces = CNCopySupportedInterfaces()
+        guard let interfaces = CNCopySupportedInterfaces() else {
+            return nil
+        }
         let count = CFArrayGetCount(interfaces)
         guard count > 0 else {
             return nil
