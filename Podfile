@@ -1,5 +1,5 @@
 source 'https://github.com/EXILIM-Plugin/EXILIM-Plugin-iOS-PodSpecs.git'
-source 'https://github.com/kunichiko/DeviceConnect-PodSpecs.git'
+source 'https://github.com/DeviceConnect/DeviceConnect-PodSpecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '9.0'
